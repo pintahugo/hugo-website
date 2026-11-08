@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hugo Pinta | AI-First Kehittäjä</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+  <!-- Navigaatio -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">
+        <span class="logo-accent">&gt;</span> hugo.dev
+      </a>
+      <nav class="nav-links">
+        <a href="#about">Tietoa</a>
+        <a href="#skills">Osaaminen</a>
+        <a href="#projects">Projektit</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Ota yhteyttä</a>
+        <button id="theme-toggle" class="theme-btn" aria-label="Vaihda teemaa">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="badge">🚀 AI-First Kehittäjä</div>
+        <h1 class="hero-title">
+          Terve, olen <span class="gradient-text">Hugo Pinta</span>.
+        </h1>
+        <p class="hero-subtitle">
+          Rakennan tulevaisuuden digitaalisia palveluita hyödyntäen tekoälyagentteja, modernia koodia ja nopeaa prototypointia.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Tutustu töihin</a>
+          <a href="https://github.com/pintahugo" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            GitHub-profiili ↗
+          </a>
+        </div>
+      </div>
+      
+      <!-- Interaktiivinen terminaali-kortti -->
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="terminal-title">bash — hugo@macbook</span>
+        </div>
+        <div class="terminal-body" id="terminal-body">
+          <p><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+          <p class="response">&gt; Hugo Pinta — AI-first builder & developer</p>
+          <p><span class="prompt">$</span> <span class="cmd">hugo.current_focus()</span></p>
+          <p class="response">&gt; ["AI Agents", "Fullstack Web", "Automations"]</p>
+          <p><span class="prompt">$</span> <span class="cmd" id="typing-text"></span><span class="cursor">|</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Minusta -osio -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">Mikä on <span class="gradient-text">AI-First</span> -kehitys?</h2>
+      <p class="section-desc">Perinteisen koodirivin vääntämisen sijaan toimin arkkitehtina ja ratkaisijana tekoälyagenttien kanssa.</p>
+      
+      <div class="cards-grid">
+        <div class="feature-card">
+          <div class="card-icon">⚡️</div>
+          <h3>10x Nopeus</h3>
+          <p>Ideasta toimivaan prototyyppiin minuuteissa. Tekoäly luo perusrungon, minä ohjaan suuntaa ja laatua.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">🧠</div>
+          <h3>Modernit Tekoälytyökalut</h3>
+          <p>Käytössä Antigravity, LLM-rajapinnat, MCP-connectorit ja automaatiot työnkulun tehostamiseen.</p>
+        </div>
+        <div class="feature-card">
+          <div class="card-icon">🛡️</div>
+          <h3>Varmuus & Git-hallinta</h3>
+          <p>Jokainen muutos testataan ja versioidaan GitHubiin. Pysyvä kontrolli ja kestävä koodipohja.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Osaaminen -->
+  <section id="skills" class="section bg-alt">
+    <div class="container">
+      <h2 class="section-title">Teknologiat & Työkalupakki</h2>
+      <div class="skills-grid">
+        <div class="skill-pill">🤖 AI Pair Programming</div>
+        <div class="skill-pill">🐙 Git & GitHub CLI</div>
+        <div class="skill-pill">⚡️ Python & uv</div>
+        <div class="skill-pill">🌐 Node.js & JavaScript</div>
+        <div class="skill-pill">🔌 MCP (Model Context Protocol)</div>
+        <div class="skill-pill">💻 Modern Web (HTML5/CSS3)</div>
+        <div class="skill-pill">🚀 Automaatiot & API:t</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projektit -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projektit</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-badge">Tämä sivusto</div>
+          <h3>Hugo Pinta Portfolio</h3>
+          <p>Moderni ja responsiivinen AI-first-portfoliosivusto, rakennettu tekoälyagentin kanssa ja julkaistu GitHubiin.</p>
+          <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>GitHub Pages</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/pintahugo" target="_blank" class="link-btn">Lähdekoodi GitHubissa ↗</a>
+          </div>
+        </div>
+
+        <div class="project-card upcoming">
+          <div class="project-badge">Tulossa</div>
+          <h3>Seuraava AI-projekti</h3>
+          <p>Työn alla uusi tekoälypohjainen sovellus. Seuraa kehitystä GitHub-profiilissani!</p>
+          <div class="project-tags">
+            <span>AI Agents</span>
+            <span>Python</span>
+            <span>API</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Yhteydenotto -->
+  <section id="contact" class="section bg-alt">
+    <div class="container text-center">
+      <h2 class="section-title">Ota yhteyttä</h2>
+      <p class="section-desc">Haluatko sparrata tekoälyprojekteista tai rakentaa jotain yhdessä?</p>
+      
+      <div class="contact-box">
+        <a href="mailto:pintahugo81@gmail.com" class="btn btn-primary btn-lg">
+          ✉️ pintahugo81@gmail.com
+        </a>
+        <div class="social-links">
+          <a href="https://github.com/pintahugo" target="_blank" rel="noopener noreferrer">
+            GitHub (@pintahugo)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Hugo Pinta • Rakennettu AI-first periaatteella</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
