@@ -112,6 +112,11 @@ function appendBubble(content, className) {
 function generateBotReply(input) {
   const text = input.toLowerCase();
 
+  // Harjoittelu & Työmahdollisuudet
+  if (text.includes('harjoittelu') || text.includes('kesä') || text.includes('työ') || text.includes('internship') || text.includes('trainee') || text.includes('rekry') || text.includes('pesti') || text.includes('töihin')) {
+    return `Kyllä! Hugo etsii aktiivisesti <strong>harjoittelupaikkaa ensi kesäksi</strong>. Erityisesti rahoitusalan yritykset (varainhoito, arvonmääritys, analyysi, yritysrahoitus ja fintech) kiinnostavat, mutta hän on erittäin avoin ja motivoitunut myös muille mielenkiintoisille mahdollisuuksille konsultoinnissa, teknologiassa ja liiketoiminnan kehityksessä. Ota yhteyttä suoraan: <a href="mailto:hugo.pinta@icloud.com" style="color:var(--accent); text-decoration:underline;">hugo.pinta@icloud.com</a> tai <a href="https://www.linkedin.com/in/hugopinta" target="_blank" style="color:var(--accent); text-decoration:underline;">LinkedInissä</a>!`;
+  }
+
   // Since AI Hackathon & Lindström
   if (text.includes('hackathon') || text.includes('since') || text.includes('lindström') || text.includes('lindstrom') || text.includes('haaste')) {
     return `Hugo osallistui tiiminsä kanssa <strong>Since AI Hackathon</strong> -tapahtumaan! Tiimi valitsi ratkaistavakseen tekstiilipalvelu- ja kiertotalousalan suuryritys <strong>Lindströmin</strong> yrityshaasteen. He kehittivät intensiivisessä tiimityössä tekoälypohjaista ratkaisua aitoihin liiketoimintatarpeisiin.`;
