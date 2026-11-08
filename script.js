@@ -112,6 +112,11 @@ function appendBubble(content, className) {
 function generateBotReply(input) {
   const text = input.toLowerCase();
 
+  // Since AI Hackathon & Lindström
+  if (text.includes('hackathon') || text.includes('since') || text.includes('lindström') || text.includes('lindstrom') || text.includes('haaste')) {
+    return `Hugo osallistui tiiminsä kanssa <strong>Since AI Hackathon</strong> -tapahtumaan! Tiimi valitsi ratkaistavakseen tekstiilipalvelu- ja kiertotalousalan suuryritys <strong>Lindströmin</strong> yrityshaasteen. He kehittivät intensiivisessä tiimityössä tekoälypohjaista ratkaisua aitoihin liiketoimintatarpeisiin.`;
+  }
+
   // Opinnot & Koulutus
   if (text.includes('opiskel') || text.includes('koulu') || text.includes('yliopisto') || text.includes('pääaine') || text.includes('kauppatiet')) {
     return `Hugo opiskelee kauppatieteitä ja hänen pääaineensa on <strong>rahoitus</strong>. Opinnoissa painottuvat mm. yritysrahoitus, arvonmääritys (DCF & kertoimet) sekä markkinoiden kvantitatiivinen dynamiikka.`;

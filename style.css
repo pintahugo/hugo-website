@@ -449,10 +449,33 @@ body.light .btn-primary {
   transition: all 0.25s ease;
 }
 
+.project-item.highlight-card {
+  border-color: rgba(56, 189, 248, 0.3);
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.06) 0%, var(--surface) 100%);
+}
+
 .project-item:hover {
   border-color: var(--surface-hover);
   transform: translateY(-4px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.project-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.tag-badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--surface-border);
+  color: var(--text-secondary);
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
 }
 
 .project-status {
