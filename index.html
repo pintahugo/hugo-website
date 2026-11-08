@@ -3,199 +3,176 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hugo Pinta | Quantitative Finance &amp; AI-First Builder</title>
+  <title>Hugo Pinta | Rahoitus, Makrotalous &amp; Yrittäjyys</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body class="dark">
   <!-- Navigaatio -->
   <header class="navbar">
     <div class="container nav-content">
-      <a href="#" class="logo">
-        <span class="logo-indicator"></span>
-        <span>hugo.pinta</span>
+      <a href="#" class="brand-name">
+        Hugo Pinta
+        <span class="brand-title">/ Finance &amp; Ventures</span>
       </a>
       <nav class="nav-links">
-        <a href="#about">// profiili</a>
-        <a href="#skills">// osaaminen</a>
-        <a href="#projects">// projektit</a>
-        <a href="#contact" class="btn btn-primary btn-sm">Ota yhteyttä</a>
-        <button id="theme-toggle" class="theme-btn" aria-label="Vaihda teemaa">🌙</button>
+        <a href="#about">Profiili</a>
+        <a href="#competencies">Osaaminen</a>
+        <a href="#projects">Aloitteet</a>
+        <a href="#contact" class="btn btn-secondary btn-sm">Ota yhteyttä</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Vaihda teemaa">🌙</button>
       </nav>
     </div>
   </header>
 
-  <!-- Quantitative Ticker Bar -->
-  <div class="ticker-bar">
-    <div class="container ticker-content">
-      <div class="ticker-item">
-        <span class="ticker-tag">FOCUS:</span>
-        <span class="ticker-val">Finance &amp; Macroeconomics</span>
-      </div>
-      <div class="ticker-item">
-        <span class="ticker-tag">STACK:</span>
-        <span class="ticker-val">AI-First • Python • uv • Git</span>
-      </div>
-      <div class="ticker-item">
-        <span class="ticker-tag">STATUS:</span>
-        <span class="ticker-val">Building &amp; Exploring [Active]</span>
-      </div>
-    </div>
-  </div>
-
   <!-- Hero Section -->
   <section class="hero">
     <div class="container hero-grid">
-      <div class="hero-text">
-        <div class="badge">
-          <span>●</span> Kauppatieteet &amp; Rahoitus • AI Builder
-        </div>
-        <h1 class="hero-title">
-          Terve, olen <br><span class="gradient-text">Hugo Pinta</span>.
+      <div class="hero-intro">
+        <span class="pill-label">Kauppatieteet • Rahoitus</span>
+        <h1 class="hero-heading">
+          Yhdistän talousanalyysin, makrotalouden ja <span class="hero-accent">tekoälyinnovaatiot</span>.
         </h1>
-        <p class="hero-subtitle">
-          Kauppatieteiden opiskelija rahoituksen pääaineella. Yhdistän analyyttisen arvonmäärityksen, makrotalouden ymmärryksen ja modernin tekoälykehityksen vaikuttavien ratkaisujen rakentamiseen.
+        <p class="hero-lead">
+          Olen rahoitukseen erikoistuva kauppatieteiden opiskelija. Työskentelen analyyttisellä tarkkuudella, yrittäjämäisellä asenteella ja hyödynnän moderneja tekoälytyökaluja arvonluontiin.
         </p>
-        <div class="hero-actions">
-          <a href="#about" class="btn btn-primary">Tutustu profiiliin</a>
-          <a href="https://github.com/pintahugo" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-            GitHub-profiili ↗
-          </a>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">Ota yhteyttä</a>
+          <a href="#about" class="btn btn-secondary">Tutustu taustaani</a>
         </div>
       </div>
-      
-      <!-- Interaktiivinen terminaali-kortti -->
-      <div class="terminal-card">
-        <div class="terminal-header">
-          <div class="terminal-dots">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-          </div>
-          <span class="terminal-title">hugo@finance-terminal — zsh</span>
-          <span class="terminal-tag">LIVE</span>
+
+      <!-- Executive Profile Summary -->
+      <div class="profile-card">
+        <div class="profile-card-header">
+          <div class="profile-avatar-circle">HP</div>
+          <div class="profile-name">Hugo Pinta</div>
+          <div class="profile-role">Kauppatieteiden opiskelija (Rahoitus)</div>
         </div>
-        <div class="terminal-body" id="terminal-body">
-          <p><span class="prompt">$</span> <span class="cmd">hugo.profile()</span></p>
-          <p class="response">&gt; Kauppatieteet (Rahoitus) | Avoin uusille innovaatioille</p>
-          <p><span class="prompt">$</span> <span class="cmd">hugo.passions()</span></p>
-          <p class="response">&gt; ["Rahoitus &amp; DCF", "Makrotalous", "Tekoäly", "Yrittäjyys", "Urheilu"]</p>
-          <p><span class="prompt">$</span> <span class="cmd">hugo.mindset()</span></p>
-          <p class="response">&gt; "High energy, analytical rigor &amp; bias toward action"</p>
-          <p><span class="prompt">$</span> <span class="cmd" id="typing-text"></span><span class="cursor">_</span></p>
+
+        <div class="profile-items">
+          <div class="profile-row">
+            <span class="profile-row-label">Pääaine &amp; Tausta</span>
+            <span class="profile-row-value">Rahoitus (Yritysrahoitus, Arvonmääritys)</span>
+          </div>
+          <div class="profile-row">
+            <span class="profile-row-label">Fokus &amp; Kiinnostus</span>
+            <span class="profile-row-value">Makrotalous, Tekoälyratkaisut, Yrittäjyys</span>
+          </div>
+          <div class="profile-row">
+            <span class="profile-row-label">Toimintatapa</span>
+            <span class="profile-row-value">Korkea draivi, urheilullinen sitkeys &amp; uteliaisuus</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Profiili ja pilarit -->
+  <!-- Profiili & Vahvuudet -->
   <section id="about" class="section">
     <div class="container">
-      <div class="section-tag">// VAHVUUDET &amp; OSA-ALUEET</div>
-      <h2 class="section-title">Rahoituksen, datan ja <span class="gradient-text">innovaatioiden</span> leikkauspisteessä</h2>
-      <p class="section-desc">Uskon, että suurin arvo syntyy yhdistämällä syvällinen taloudellinen ymmärrys nopeaan teknologiseen toimeenpanoon.</p>
-      
-      <div class="cards-grid">
-        <div class="feature-card">
-          <span class="card-num">01 / FINANCE</span>
-          <div class="card-icon">📊</div>
-          <h3>Rahoitus &amp; Makrotalous</h3>
-          <p>Syventyminen yritysrahoitukseen, arvonmääritykseen ja globaaleihin talouden markkinatrendeihin. Tavoitteena ymmärtää kokonaiskuva ja arvonajurit.</p>
+      <div class="section-eyebrow">Fokus &amp; Vahvuudet</div>
+      <h2 class="section-title">Analyyttinen ote. Nopea toimeenpano.</h2>
+      <p class="section-desc">
+        Modernissa taloudessa menestyminen vaatii kykyä ymmärtää kokonaiskuvaa ja hyödyntää uusia teknologioita ketterästi.
+      </p>
+
+      <div class="grid-4">
+        <div class="pillar-card">
+          <div class="pillar-icon">🏛</div>
+          <h3>Rahoitus &amp; Valuaatiot</h3>
+          <p>Syventyminen yritysrahoituksen lainalaisuuksiin, kassavirtojen mallintamiseen ja pääomamarkkinoiden arvonajureihin.</p>
         </div>
-        <div class="feature-card">
-          <span class="card-num">02 / TECH</span>
-          <div class="card-icon">⚡️</div>
-          <h3>AI-First Kehitys</h3>
-          <p>Tekoälyn aktiivinen hyödyntäminen analyyseissä, automaatioissa ja koodauksessa. Tehokkaat työkalut (Python, uv, Git, tekoälyagentit).</p>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">🌍</div>
+          <h3>Makrotalous &amp; Markkinat</h3>
+          <p>Korkoympäristön, taloussyklien ja globaalien markkinavirtojen analysointi päätöksenteon ja strategian tukena.</p>
         </div>
-        <div class="feature-card">
-          <span class="card-num">03 / VENTURES</span>
-          <div class="card-icon">🚀</div>
-          <h3>Yrittäjyys &amp; Innovointi</h3>
-          <p>Utelias ja aloitteellinen asenne uusien ideoiden kokeiluun. Haluan olla mukana luomassa ja skaalaamassa huomisen ratkaisuja.</p>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">💡</div>
+          <h3>Tekoäly &amp; Automaatiot</h3>
+          <p>Uuden sukupolven AI-työkalujen ja automaatioiden aktiivinen hyödyntäminen tiedonhaussa, analyyseissä ja koodauksessa.</p>
         </div>
-        <div class="feature-card">
-          <span class="card-num">04 / DRIVE</span>
-          <div class="card-icon">🏃‍♂️</div>
-          <h3>Urheilu &amp; Sitkeys</h3>
-          <p>Aktiivinen ja tavoitteellinen urheilutausta luo korkean energiatason, paineensietokyvyn ja kurinalaisuuden saattaa projektit maaliin.</p>
+
+        <div class="pillar-card">
+          <div class="pillar-icon">⚡️</div>
+          <h3>Yrittäjyys &amp; Draivi</h3>
+          <p>Urheilutaustan tuoma periksiantamattomuus ja korkea energiataso. Avoimuus uusille liiketoimintaideoille ja tiimityölle.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Osaaminen -->
-  <section id="skills" class="section bg-alt">
+  <section id="competencies" class="section">
     <div class="container">
-      <div class="section-tag">// TYÖKALUPAKKI &amp; OSAAMINEN</div>
-      <h2 class="section-title">Teknologiat &amp; Kompetenssit</h2>
-      <p class="section-desc">Monipuolinen yhdistelmä liiketoimintaosaamista ja modernia teknologiaa.</p>
-      
-      <div class="skills-grid">
-        <div class="skill-pill">📈 Yritysrahoitus &amp; Valuaatiot</div>
-        <div class="skill-pill">🌍 Makrotalous &amp; Markkina-analyysi</div>
-        <div class="skill-pill">🤖 AI-First Kehitys &amp; Agentit</div>
-        <div class="skill-pill">💡 Yrittäjyys &amp; Strategia</div>
-        <div class="skill-pill">⚡️ Python &amp; uv (Datanhallinta)</div>
-        <div class="skill-pill">🐙 Git &amp; GitHub CLI</div>
-        <div class="skill-pill">🌐 Modernit Web-työkalut</div>
-        <div class="skill-pill">🏆 Tavoitteellinen Tiimityö</div>
+      <div class="section-eyebrow">Kompetenssit</div>
+      <h2 class="section-title">Liiketoiminta &amp; Teknologia</h2>
+      <p class="section-desc">Työkalut ja osaamisalueet, joilla rakennan ja analysoin.</p>
+
+      <div class="skills-wrapper">
+        <div class="skill-tag">Yritysrahoitus &amp; DCF-mallinnus</div>
+        <div class="skill-tag">Makrotalouden analyysi</div>
+        <div class="skill-tag">Tekoälyavusteinen kehitys (AI-First)</div>
+        <div class="skill-tag">Python &amp; Datankäsittely</div>
+        <div class="skill-tag">Versionhallinta (Git &amp; GitHub)</div>
+        <div class="skill-tag">Liiketoimintamallit &amp; Innovaatiot</div>
+        <div class="skill-tag">Strateginen suunnittelu</div>
+        <div class="skill-tag">Tavoitteellinen tiimityöskentely</div>
       </div>
     </div>
   </section>
 
-  <!-- Projektit -->
+  <!-- Aloitteet & Projektit -->
   <section id="projects" class="section">
     <div class="container">
-      <div class="section-tag">// PROJEKTIT &amp; INNOVAATIOT</div>
-      <h2 class="section-title">Valitut Työt</h2>
+      <div class="section-eyebrow">Projektit &amp; Aloitteet</div>
+      <h2 class="section-title">Ajankohtaista</h2>
+      <p class="section-desc">Esimerkkejä projekteista ja kokeiluista, joita kehitän.</p>
+
       <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-badge">Julkaistu</div>
-          <h3>Hugo Pinta – Portfolio &amp; Hub</h3>
-          <p>Skarppi ja moderni portfoliosivusto, joka esittelee taustani rahoituksessa ja tekoälyssä. Rakennettu AI-first -metodologialla ja julkaistu suoraan GitHub Pagesiin.</p>
-          <div class="project-tags">
-            <span>HTML5/CSS3</span>
-            <span>JavaScript</span>
-            <span>GitHub Pages</span>
-            <span>AI-Driven</span>
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/pintahugo/hugo-website" target="_blank" class="link-btn">Koodi GitHubissa ↗</a>
-          </div>
+        <div class="project-item">
+          <span class="project-status">Julkaistu</span>
+          <h3>Henkilökohtainen sivusto &amp; Hub</h3>
+          <p>Moderni, suorituskykyinen verkkosivusto, joka kokoaa taustani ja osaamiseni. Rakennettu modernilla AI-first -kehitysputkella ja julkaistu pilveen.</p>
+          <a href="https://github.com/pintahugo/hugo-website" target="_blank" rel="noopener noreferrer" class="project-link">
+            Tarkastele GitHubissa →
+          </a>
         </div>
 
-        <div class="project-card upcoming">
-          <div class="project-badge">Kehityksessä</div>
-          <h3>Makrotalouden &amp; Markkinoiden AI-Seuranta</h3>
-          <p>Työn alla tekoälyavusteinen työkalu, joka seuraa makroindikaattoreita ja rahoitusmarkkinoiden liikkeitä Pythonilla ja datarajapinnoilla.</p>
-          <div class="project-tags">
-            <span>Python</span>
-            <span>Rahoitusdata</span>
-            <span>Makro</span>
-            <span>Automaatiot</span>
-          </div>
+        <div class="project-item">
+          <span class="project-status">Kehitteillä</span>
+          <h3>Talousdatan &amp; Makron AI-seuranta</h3>
+          <p>Tutkimusprojekti ja työkalu, joka kokoaa markkinadataa ja tekoälyn avulla tiivistää makrotalouden keskeisiä indikaattoreita sijoituspäätösten tueksi.</p>
+          <span class="project-link" style="color: var(--text-muted); cursor: default;">
+            Projektivaiheessa
+          </span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Yhteydenotto -->
-  <section id="contact" class="section bg-alt">
-    <div class="container text-center">
-      <div class="section-tag">// YHTEYDENOTTO</div>
-      <h2 class="section-title">Verkostoidutaan</h2>
-      <p class="section-desc">Olen aina avoin sparrailulle, uusille ideoille, innovaatioille ja yhteisille projekteille.</p>
-      
-      <div class="contact-box">
-        <a href="mailto:hugo.pinta@icloud.com" class="btn btn-primary btn-lg">
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-container">
+        <div class="section-eyebrow">Yhteys</div>
+        <h2 class="section-title">Aloitetaan keskustelu</h2>
+        <p class="section-desc" style="margin-bottom: 1.5rem;">
+          Olen aina kiinnostunut kuulemaan uusista mahdollisuuksista, sparraamaan innovaatioista tai keskustelemaan rahoituksen ja teknologian tulevaisuudesta.
+        </p>
+
+        <a href="mailto:hugo.pinta@icloud.com" class="contact-email-btn">
           ✉️ hugo.pinta@icloud.com
         </a>
-        <div class="social-links">
+
+        <div class="contact-social">
           <a href="https://github.com/pintahugo" target="_blank" rel="noopener noreferrer">
-            // GitHub (@pintahugo)
+            GitHub (@pintahugo)
           </a>
         </div>
       </div>
@@ -204,8 +181,8 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-content">
-      <p>© 2026 Hugo Pinta • Quantitative Finance, Macro &amp; AI-First Execution</p>
+    <div class="container">
+      <p>© 2026 Hugo Pinta • Kauppatieteet, Rahoitus &amp; Uudet Teknologiat</p>
     </div>
   </footer>
 
