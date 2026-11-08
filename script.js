@@ -117,9 +117,9 @@ function generateBotReply(input) {
     return `Hugo osallistui tiiminsä kanssa <strong>Since AI Hackathon</strong> -tapahtumaan! Tiimi valitsi ratkaistavakseen tekstiilipalvelu- ja kiertotalousalan suuryritys <strong>Lindströmin</strong> yrityshaasteen. He kehittivät intensiivisessä tiimityössä tekoälypohjaista ratkaisua aitoihin liiketoimintatarpeisiin.`;
   }
 
-  // Opinnot & Koulutus
-  if (text.includes('opiskel') || text.includes('koulu') || text.includes('yliopisto') || text.includes('pääaine') || text.includes('kauppatiet')) {
-    return `Hugo opiskelee kauppatieteitä ja hänen pääaineensa on <strong>rahoitus</strong>. Opinnoissa painottuvat mm. yritysrahoitus, arvonmääritys (DCF & kertoimet) sekä markkinoiden kvantitatiivinen dynamiikka.`;
+  // Opinnot & Koulutus & Sijainti
+  if (text.includes('opiskel') || text.includes('lut') || text.includes('koulu') || text.includes('yliopisto') || text.includes('pääaine') || text.includes('kauppatiet') || text.includes('turku') || text.includes('missä') || text.includes('sijainti') || text.includes('asu')) {
+    return `Hugo opiskelee kauppatieteitä <strong>LUT-yliopistossa</strong> pääaineenaan <strong>rahoitus</strong>. Hänen kotipaikkansa on <strong>Turku</strong>. Opinnoissa ja tekemisessä painottuvat yritysrahoitus, valuaatiot sekä modernit tekoälyteknologiat.`;
   }
 
   // Rahoitus & Makrotalous
