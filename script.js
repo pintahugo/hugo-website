@@ -26,18 +26,19 @@ themeToggleBtn.addEventListener('click', () => {
   }
 });
 
-// Terminaalin kirjoitusefekti
+// Terminaalin kirjoitusefekti (Rahoitus + Tekoäly + Innovaatiot)
 const phrases = [
-  'echo "Welcome to my AI-powered website!"',
-  'git commit -m "Shipped my first website with AI 🚀"',
-  'uv run dev --ai-first',
-  'gh repo create hugo-website --public'
+  'uv run analyze_macro_trends.py --fed-rates',
+  'echo "Combining deep financial insight with AI execution 💡"',
+  'git commit -m "Shipped market valuation model 📈"',
+  'python -m portfolio_optimization --sharpe-ratio',
+  'echo "Always open for new innovative ideas & ventures 🚀"'
 ];
 
 let phraseIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
-const typingSpeed = 70;
+const typingSpeed = 65;
 const typingTextElement = document.getElementById('typing-text');
 
 function typeEffect() {
@@ -54,7 +55,7 @@ function typeEffect() {
   let delay = typingSpeed;
 
   if (!isDeleting && charIndex === currentPhrase.length) {
-    delay = 2000; // Pysähdy hetkeksi kun lause on valmis
+    delay = 2200; // Pysähdy hetkeksi kun lause on valmis
     isDeleting = true;
   } else if (isDeleting && charIndex === 0) {
     isDeleting = false;
